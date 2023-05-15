@@ -1,0 +1,91 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: .1em;
+    width: 100vw;
+    height: 100vh;
+    background-color: darkslategray;
+}
+body{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+#inv-box{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 710px;
+    border: 3px solid red;
+}
+#trade-box{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,140px);
+    grid-row: 140px;
+    width: 710px;
+    border: 3px solid blue;
+}
+.inv-item{
+    position: relative;
+    border: 1px solid rgb(210, 210,210);
+    width: 140px;
+    height: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: rgba(255, 255, 255,0);
+    border: 1px solid white;
+    background-color: rgb(41, 41, 41);
+    background-position: center;
+    padding: 0;
+    margin: 0;
+}
+.inv-item:hover{
+    color: rgba(255, 255, 255,1);
+    background-color: rgba(50, 50, 50,.9);
+}
+.inspect_anchor{
+    position: absolute;
+    color: white;
+    display: content;
+    background-color: rgb(21, 21, 21);
+    border-radius: 5px;
+    text-align: center;
+    width: 60px;
+    height: 20px;
+    bottom: 5px;
+    right: 5px;
+    font-size: small;
+    text-decoration: none;
+}
+.inspect_anchor:hover{
+    background-color: rgb(40, 40, 40);
+}
+.market_anchor{
+    position: absolute;
+    font-size: small;
+    color: white;
+    display: content;
+    background-color: rgb(21, 21, 21);
+    border-radius: 5px;
+    text-align: center;
+    width: 60px;
+    height: 20px;
+    bottom: 5px;
+    left: 5px;
+    text-decoration: none;
+}
+.market_anchor:hover{
+    background-color: rgb(40, 40, 40);
+}
+#trade-button{
+    height: 60px;
+    width: 120px;
+    color: white;
+    align-content: center;
+    text-align: center;
+    background-color: green;
+}
