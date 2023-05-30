@@ -1,0 +1,151 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: .1em;
+    width: 100vw;
+    height: 100vh;
+    background-color: darkslategray;
+}
+#body{
+    height: 100%;
+    width: 100%;
+}
+#inv_button{
+    text-emphasis: bold;
+    color:white;
+    text-decoration: none;
+}
+#search{
+    flex-grow: 1;
+}
+#search h1{
+    color: white;
+}
+#main_body{
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: 1fr 2fr;
+    height: 700px;
+}
+#trades{
+    flex-grow: 3;
+}
+#search_button{
+    display: block;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+}
+#search_button:hover{
+    background-color: rgba(255, 255, 255, 0.351);
+}
+.trade-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 282px;
+}
+.trade-container-container{
+    height: 282px;
+}
+.have-box{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 710px;
+    height: 282px;
+    background-color: rgb(21, 21, 21);
+    border: 3px solid pink;
+}
+.for-box{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 710px;
+    height: 282px;
+    background-color: rgb(21, 21, 21);
+    border: 3px solid pink;
+}
+.item_card{
+    position: relative;
+    height: 140px;
+    width:140px;
+    border: 1px solid white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(41, 41, 41);
+    background-position: center;
+    padding: 0;
+    margin: 0;
+}
+.profile_card{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    position: relative;
+    left: 0px;
+    bottom: 56px;
+}
+.inspect_anchor{
+    position: absolute;
+    color: white;
+    display: content;
+    background-color: rgb(21, 21, 21);
+    border-radius: 5px;
+    text-align: center;
+    width: 60px;
+    height: 20px;
+    bottom: 5px;
+    right: 5px;
+    font-size: small;
+    text-decoration: none;
+}
+.inspect_anchor:hover{
+    background-color: rgb(40, 40, 40);
+}
+.market_anchor{
+    position: absolute;
+    font-size: small;
+    color: white;
+    display: content;
+    background-color: rgb(21, 21, 21);
+    border-radius: 5px;
+    text-align: center;
+    width: 60px;
+    height: 20px;
+    bottom: 5px;
+    left: 5px;
+    text-decoration: none;
+}
+.market_anchor:hover{
+    background-color: rgb(40, 40, 40);
+}
+.card-title{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    vertical-align: top;
+    width: 100%;
+    margin: 0px;
+    font-size: 14px;
+}
+.delete_card{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    background-color: red;
+    text-decoration: none;
+    color:white;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    left: 0px;
+    bottom: 56px;
+    justify-content: center;
+}
+.delete_card h4{
+    display: block;
+    width: 100%;
+}
